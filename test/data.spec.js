@@ -1,18 +1,26 @@
-import { example, anotherExample } from '../src/data.js';
+import { pokeType } from '../src/data.js';
+
+const pArray = [{type: 'fire'}, {type: 'water'}, {type: 'ear'}];
+const todos = 'allPoke';
+const pChage = 'fire';
 
 
-describe('example', () => {
+describe('pokeType', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof pokeType).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `tipo todos`', () => {
+    expect(pokeType(pArray, todos)).toEqual(pArray);
+  });
+
+  it('returns `tipo filtrado`', () => {
+    expect(pokeType(pArray, pChage)).toEqual([{type: 'fire'}]);
   });
 });
 
 
-describe('anotherExample', () => {
+/*describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
@@ -20,4 +28,4 @@ describe('anotherExample', () => {
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
-});
+}); */
