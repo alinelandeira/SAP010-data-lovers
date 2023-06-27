@@ -1,9 +1,9 @@
-const buttonInformation = document.getElementById("chikorita");
+/*const buttonInformation = document.getElementById("chikorita");
 const newHtml = document.getElementsByClassName("curiosities-box");
 
 
 function showCuriosities(curiosities) {
-    return `
+  return `
         <div id="all-content"> 
             <div id="calcuo-agregado">
                 <p>bananinha</p> 
@@ -25,8 +25,8 @@ function showCuriosities(curiosities) {
 }
 
 buttonInformation.addEventListener("click", function() {
-    curiositiesBox.innerHTML = showCuriosities();
-    console.log("Click")
+  curiositiesBox.innerHTML = showCuriosities();
+  //console.log("Click")
 });
-
+*/
     

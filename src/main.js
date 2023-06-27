@@ -12,7 +12,7 @@ const pokeFilterOrganize = document.getElementById("order");
 const dataPokemon = data.pokemon; //Criei uma variavel pra colocar os dados de todos os pokemons
 
 function createCards(pokemons) {
-    return ` 
+  return ` 
 <div id= "all-content"> 
     <div id= "poke-numbers">
     <h4>Nº: ${pokemons.num} </h4> 
@@ -39,17 +39,17 @@ const allPokemons = dataPokemon.map(pokemons => createCards(pokemons)).join(" ")
 pokeCards.innerHTML = allPokemons;
 
 pokeFilterType.addEventListener("change", function (event) {
-    const pokeChange = event.target.value;
-    const pokemonFiltered = pokeType(dataPokemon, pokeChange);
-    const returnCard = pokemonFiltered.map(pokemons => createCards(pokemons)).join(" ");
-    pokeCards.innerHTML = returnCard;
+  const pokeChange = event.target.value;
+  const pokemonFiltered = pokeType(dataPokemon, pokeChange);
+  const returnCard = pokemonFiltered.map(pokemons => createCards(pokemons)).join(" ");
+  pokeCards.innerHTML = returnCard;
 });
 
 pokeFilterOrganize.addEventListener("change", function (event) {
-    const changeOrder = event.target.value;
-    const pokemonAlphaOrder = pokeOrder(dataPokemon, changeOrder);
-    const returnCardOrder = pokemonAlphaOrder.map(pokemons => createCards(pokemons)).join(" ");
-    pokeCards.innerHTML = returnCardOrder;
+  const changeOrder = event.target.value;
+  const pokemonAlphaOrder = pokeOrder(dataPokemon, changeOrder);
+  const returnCardOrder = pokemonAlphaOrder.map(pokemons => createCards(pokemons)).join(" ");
+  pokeCards.innerHTML = returnCardOrder;
 });
 
 
