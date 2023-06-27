@@ -1,47 +1,63 @@
-
 body {
-  width: 100%; /* largura */
-  height: 100%; /* altura  */
-  background-image: url(imagens/fundo.png); /* imagem de fundo  */
-  background-repeat: no-repeat; /* repetição de imagem  */
-  background-attachment: fixed; /*   */
-  background-size: 100% 100%; /*  tamamnho da imagem no html */
+  width: 100%;
+  /* largura */
+  height: 100%;
+  /* altura  */
+  background-image: url(imagens/fundo.png);
+  /* imagem de fundo  */
+  background-repeat: no-repeat;
+  /* repetição de imagem  */
+  background-attachment: fixed;
+  /*   */
+  background-size: 100% 100%;
+  /*  tamamnho da imagem no html */
 }
 
 header {
-  text-align: center; /* alinhamento horizontal do elemento no html  */
+  text-align: center;
+  /* alinhamento horizontal do elemento no html  */
 }
 
 #menu-poke {
   background-color: #ffffff;
-  border-radius: 8px; /* bordinha arredondada  */
-  width: 100% ;
+  border-radius: 8px;
+  /* bordinha arredondada  */
+  width: 100%;
   height: 50%;
   margin: 1em;
   font-family: 'Orbitron';
   text-align: left;
-  width: 90%; 
+  width: 90%;
   height: auto;
   align-content: center;
-  margin-left: auto; /* margem esquerda */
-  margin-right: auto; /*  margem direita */
-  padding: 1em; /* espaço em volta do elemento  */
+  margin-left: auto;
+  /* margem esquerda */
+  margin-right: auto;
+  /*  margem direita */
+  padding: 1em;
+  /* espaço em volta do elemento  */
 }
 
 main {
-  background-color: #ffffff; /* cor de fundo  */
-  border-radius: 8px; /* bordinha arredondada  */
-  width: 90%; 
+  background-color: #ffffff;
+  /* cor de fundo  */
+  border-radius: 8px;
+  /* bordinha arredondada  */
+  width: 90%;
   height: auto;
   align-content: center;
   text-align: center;
-  margin-left: auto; /* margem esquerda */
-  margin-right: auto; /*  margem direita */
-  padding: 1em; /* espaço em volta do elemento  */
+  margin-left: auto;
+  /* margem esquerda */
+  margin-right: auto;
+  /*  margem direita */
+  padding: 1em;
+  /* espaço em volta do elemento  */
 
 }
 
-.filter-pokepidia { /* o ponto é usado para chamar a class e fazer as modificações somente nela  */
+.filter-pokepidia {
+  /* o ponto é usado para chamar a class e fazer as modificações somente nela  */
   text-align: right;
   margin: 10px;
 }
@@ -69,5 +85,5 @@ main {
 }
 
 #poke-numbers {
- text-align: right;
+  text-align: right;
 }

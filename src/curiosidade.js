@@ -5,7 +5,7 @@ const newHtml = document.getElementsByClassName("curiosities-box");
 function showCuriosities(curiosities) {
   return `
         <div id="all-content"> 
-            <div id="calcuo-agregado">
+            <div id="calculo-agregado">
                 <p>bananinha</p> 
             </div>
 
