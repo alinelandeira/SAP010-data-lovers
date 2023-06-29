@@ -49,3 +49,24 @@ main {
     height: 150px;
     width: 90px;
 }
+
+#poke-ball, #great-ball, #ultra-ball, #master-ball{
+text-align: left;
+justify-content: center;
+}
+
+
+#pokeBall, #greatBall, #ultraBall, #masterBall  {
+    width: 150px;
+    height:150px;
+    margin: 20px;
+   text-align: left;
+   padding: 10px;
+
+}
+
+
+
+
+ 
+   

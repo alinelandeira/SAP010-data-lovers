@@ -1,54 +1,55 @@
 import { pokeType, pokeOrder } from '../src/data.js';
 
-const pokeArray = [{type: 'fire'}, {type: 'water'}, {type: 'ear'}];
+const pokeArray = [{ type: 'fire' }, { type: 'water' }, { type: 'grass' }];
 const todos = 'allPoke';
-const pokeChage = 'fire';
-
+const pokeChange = 'fire';
 
 describe('pokeType', () => {
-  it('is a function', () => {
+  it('é uma função', () => {
     expect(typeof pokeType).toBe('function');
   });
 
-  it('returns `tipo todos`', () => {
-    expect(pokeType(pokeArray, todos)).toEqual(pArray);
+  it('deve retornar `todos os tipos`', () => {
+    expect(pokeType(pokeArray, todos)).toEqual(pokeArray);
   });
 
-  it('returns `tipo filtrado`', () => {
-    expect(pokeType(pokeArray, pokeChage)).toEqual([{type: 'fire'}]);
+  it('deve retornar `filtrado por tipo`', () => {
+    expect(pokeType(pokeArray, pokeChange)).toEqual([{ type: 'fire' }]);
   });
 });
 
-/*const pokeArraySort = [{name: 'abra'}, {type: 'mew'}, {type: 'chikorita'}];
-const pokeChangeA = 'abra'; 
-const pokeChangeZ = 'z'; 
+const pokeArraySort = [{ name: 'abra' }, { name: 'aerodactyl' }, { name: 'aipom' }];
+const pokeChangeA = 'abra';
+const pokeChangeZ = 'zubat';
 
-describe('pokeOrder', () => {
-  it('is a function', () => {
+describe('pokeOrder - ordem alfabética', () => {
+  it('é uma função', () => {
     expect(typeof pokeOrder).toBe('function');
   });
 
-  it('returns `ordem alfabetica de A-Z`', () => {
-    expect(pokeOrder(pokeArraySort, pokeChangeA)).toBe([{name: 'abra'}]);
-  });
-}); 
-
-describe('pokeOrder', () => {
-  it('returns `ordem alfabetica de Z-A', () => {
-    expect(pokeOrder(pokeArraySor, pokeChangeZ)).toBe([{name: 'mew'}]);
-  });
-}); 
-
-const pokeArraySort = [{num: '001'}, {num: '002'}, {num: '003'}];
-const pokeChangeNumAsc = '001'; 
-const pokeChangeNumDesc = '003'; 
-
-/*describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+  it('deve retornar a lista em ordem alfabética de A-Z', () => {
+    expect(pokeOrder(pokeArraySort, pokeChangeA)).toEqual([{ name: 'abra' }]);
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('deve retornar a lista em ordem alfabética de Z-A', () => {
+    expect(pokeOrder(pokeArraySort, pokeChangeZ)).toEqual([{ name: 'zubat' }]);
   });
-}); */
+});
+
+const pokeArrayOrder = [{ num: '001' }, { num: '002' }, { num: '003' }];
+const pokeChangeNumAsc = '001';
+const pokeChangeNumDesc = '251';
+
+describe('pokeOrder - ordem numérica', () => {
+  it('é uma função', () => {
+    expect(typeof pokeOrder).toBe('function');
+  });
+
+  it('deve retornar a lista em ordem numérica crescente', () => {
+    expect(pokeOrder(pokeArrayOrder, pokeChangeNumAsc)).toEqual([{ num: '001' }]);
+  });
+
+  it('deve retornar a lista em ordem numérica decrescente', () => {
+    expect(pokeOrder(pokeArrayOrder, pokeChangeNumDesc)).toEqual([{ num: '251' }]);
+  });
+});

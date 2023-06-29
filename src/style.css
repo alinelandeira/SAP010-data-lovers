@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+}
+
 body {
   width: 100%;
   /* largura */
@@ -56,6 +60,14 @@ main {
 
 }
 
+a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  font-size: large;
+  font-weight: bold
+}
+
 .filter-pokepidia {
   /* o ponto é usado para chamar a class e fazer as modificações somente nela  */
   text-align: right;
@@ -71,6 +83,8 @@ main {
   text-align: center;
   padding: 10px;
   font-size: 15px;
+  font-family: 'Orbitron';
+  font-weight: bold
 }
 
 
@@ -78,10 +92,16 @@ main {
   display: inline-block;
   border-radius: 1em;
   background-color: rgb(188, 190, 190);
-  width: 240px;
-  padding: 5px;
+  width: 270px;
+  height: 320px;
+  padding: 12px;
   margin: 20px;
   font-family: 'Orbitron';
+  justify-content: center;
+}
+
+#poke-numbers, #poke-image, #poke-info, #poke-types {
+  margin: 15px;
 }
 
 #poke-numbers {
