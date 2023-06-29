@@ -7,7 +7,7 @@ export function pokeType(pokeArray, pokeChange) {
   return typeFiltered;
 }
 
-export function pokeOrder(pokeArray,changeOrder) {
+export function pokeOrder(pokeArray, changeOrder) {
   const ordered = pokeArray.sort((a, b) => {
     if (changeOrder === "nameAsc") {
       if (a.name > b.name) {
@@ -22,7 +22,7 @@ export function pokeOrder(pokeArray,changeOrder) {
         return 1;
       }
       if (a.name > b.name) {
-        return 0;
+        return -1;
       }
       return 0;
     } else if (changeOrder === "numberAsc") {

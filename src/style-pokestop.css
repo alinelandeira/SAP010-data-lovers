@@ -1,28 +1,42 @@
 body {
-    width: 99%; /* largura  */
-    height: 100%; /* altura  */
-    background-image: url(imagens/fundo.png); /* imagem de fundo */
-    background-repeat: no-repeat; /* repetição da imagem  */
-    background-attachment: fixed; /*   */
-    background-size: 100% 100%; /* tamanho da imagem  */
-    font-family: 'Orbitron'; /* fonte das letras  */
+    width: 99%;
+    /* largura  */
+    height: 100%;
+    /* altura  */
+    background-image: url(imagens/fundo.png);
+    /* imagem de fundo */
+    background-repeat: no-repeat;
+    /* repetição da imagem  */
+    background-attachment: fixed;
+    /*   */
+    background-size: 100% 100%;
+    /* tamanho da imagem  */
+    font-family: 'Orbitron';
+    /* fonte das letras  */
 }
 
 header {
-    text-align: center; /*  alinhamento do item na tela */
+    text-align: center;
+    /*  alinhamento do item na tela */
 }
 
 main {
-    background-color: #ffff; /* cor de fundo  */
-    border-radius: 8px; /* bordinha arredondada  */
+    background-color: #ffff;
+    /* cor de fundo  */
+    border-radius: 8px;
+    /* bordinha arredondada  */
     width: 90%;
     height: auto;
     align-content: center;
     text-align: center;
-    margin-left: auto; /*  margem na esquerda */
-    margin-right: auto; /*  margem na direita */
-    padding: 2em; /* espaço em volta da elemento  */
-    font-size:larger ;/* tamanho da fonte  */
+    margin-left: auto;
+    /*  margem na esquerda */
+    margin-right: auto;
+    /*  margem na direita */
+    padding: 2em;
+    /* espaço em volta da elemento  */
+    font-size: larger;
+    /* tamanho da fonte  */
 }
 
 p {
@@ -37,11 +51,12 @@ p {
     outline: none;
     cursor: pointer;
     position: relative;
-    overflow: hidden; /* Overflow serve para controlar ás "bordas" que ficam fora do limite de um conteúdo
+    overflow: hidden;
+    /* Overflow serve para controlar ás "bordas" que ficam fora do limite de um conteúdo
     Ex: Usamos uma imagem quadrada para um botão redondo, então as pontas do quadrado foram escondidas com o hidden*/
-  }
-  
-  .icone {
+}
+
+.icone {
     display: block;
     width: 100%;
     height: 100%;
@@ -49,7 +64,7 @@ p {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-  }
+}
 
 footer {
     bottom: 0;
@@ -67,4 +82,5 @@ footer {
 
 a {
     color: rgb(0, 0, 0);
+    font-weight: bold
 }
