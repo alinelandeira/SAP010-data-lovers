@@ -3,7 +3,7 @@ const newInformation = document.getElementById("boxcuriosities");
 
 
 buttonInformation.addEventListener("click", function () {
-    return newInformation.innerHTML = `
+  return newInformation.innerHTML = `
   <div id="poke-ball"> 
         <img src="imagens/pokeball.png" id="pokeBall"/>
         <h3>Pokeball</h3>

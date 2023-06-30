@@ -98,6 +98,7 @@ a {
   margin: 20px;
   font-family: 'Orbitron';
   justify-content: center;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.9);
 }
 
 #poke-numbers, #poke-image, #poke-info, #poke-types {
