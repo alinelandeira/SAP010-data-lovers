@@ -2,6 +2,21 @@
   margin: 0;
 }
 
+
+@media screen and (max-width: 425px){
+
+  html {
+    width: 100vw;
+  }
+  header {
+    text-align: center; /* alinhamento horizontal do elemento no html  */
+  } 
+
+  #poke-tittle {
+width: 80%;
+  }
+}
+
 body {
   width: 100%;
   /* largura */
@@ -17,10 +32,6 @@ body {
   /*  tamamnho da imagem no html */
 }
 
-header {
-  text-align: center;
-  /* alinhamento horizontal do elemento no html  */
-}
 
 #menu-poke {
   background-color: #ffffff;
@@ -108,3 +119,12 @@ a {
 #poke-numbers {
   text-align: right;
 }
+
+.front{
+  
+}
+
+.back {
+  
+}
+

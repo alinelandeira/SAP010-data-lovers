@@ -13,27 +13,32 @@ const dataPokemon = data.pokemon; //Criei uma variavel pra colocar os dados de t
 
 function createCards(pokemons) {
   return ` 
-<div id= "all-content"> 
-    <div id= "poke-numbers">
-    <h4>Nº: ${pokemons.num} </h4> 
+<div class="allCard" id= "all-content"> 
+  <div class=babel">
+    <div class="front">
+      <div id= "poke-numbers">
+       <h4>Nº: ${pokemons.num} </h4> 
+      </div>
+
+      <div id= "poke-image">
+        <img src="${pokemons.img}" alt="Imagem do Pokémon">
+      </div>
     </div>
 
-    <div id= "poke-image">
-    <img src="${pokemons.img}" alt="Imagem do Pokémon">
+    <div class="back" id="poke-info">
+        <h2>${pokemons.name.charAt(0).toUpperCase() + pokemons.name.slice(1)}</h2> 
+
+      <div id="poke-types">
+        <p> ${pokemons.type.join(" ")} </p>  
+     </div>
+
+        <p> Raridade: ${pokemons["pokemon-rarity"]}</p>
     </div>
-
-    <div id="poke-info">
-   <h2>${pokemons.name.charAt(0).toUpperCase() + pokemons.name.slice(1)}</h2> 
-
-   <div id="poke-types">
-    <p> ${pokemons.type.join(" ")} </p>  
-    </div>
-
-   <p> Raridade: ${pokemons["pokemon-rarity"]}</p>
-</div>
+  </div>
 </div>
 `
 }
+
 const allPokemons = dataPokemon.map(pokemons => createCards(pokemons)).join(" ");
 
 pokeCards.innerHTML = allPokemons;
@@ -51,9 +56,5 @@ pokeFilterOrganize.addEventListener("change", function (event) {
   const returnCardOrder = pokemonAlphaOrder.map(pokemons => createCards(pokemons)).join(" ");
   pokeCards.innerHTML = returnCardOrder;
 });
-
-
-
-
 
 
