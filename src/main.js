@@ -13,26 +13,38 @@ const dataPokemon = data.pokemon; //Criei uma variavel pra colocar os dados de t
 
 function createCards(pokemons) {
   return ` 
-<div class="allCard" id= "all-content"> 
-  <div class=babel">
+<div class="flip-container" id= "all-content"> 
+  <div class="flipper">
     <div class="front">
-      <div id= "poke-numbers">
-       <h4>Nº: ${pokemons.num} </h4> 
-      </div>
+      <div class="cardPoke">
+        <div id= "poke-numbers">
+          <h4>Nº: ${pokemons.num} </h4> 
+        </div>
+      
+        <div id= "poke-image">
+          <img src="${pokemons.img}" alt="Imagem do Pokémon">
+        </div>
 
-      <div id= "poke-image">
-        <img src="${pokemons.img}" alt="Imagem do Pokémon">
+          <h2>${pokemons.name.charAt(0).toUpperCase() + pokemons.name.slice(1)}</h2> 
+          <br>
+          <p> <img src="imagens/turn.png" id="turn-icon"> </p>
       </div>
     </div>
 
-    <div class="back" id="poke-info">
-        <h2>${pokemons.name.charAt(0).toUpperCase() + pokemons.name.slice(1)}</h2> 
+    <div class="back"
+     <div class="cardPoke" id="poke-info">
+        <div id="poke-types">
+          <p> <strong>Tipo: </strong> ${pokemons.type.join(" ")} </p>  
+     
+          <p> <strong>Raridade: </strong> ${pokemons["pokemon-rarity"]}</p>
 
-      <div id="poke-types">
-        <p> ${pokemons.type.join(" ")} </p>  
-     </div>
+          <p><strong>Altura: </strong> ${pokemons.size.height}</p>
 
-        <p> Raridade: ${pokemons["pokemon-rarity"]}</p>
+         <p><strong>Peso: </strong>${pokemons.size.weight}</p>
+
+          <p><strong>Ataque especial: </strong>${pokemons["special-attack"].map(attack => attack.name).join(',  ')}.</p>
+        </div>
+      </div>  
     </div>
   </div>
 </div>
@@ -43,11 +55,23 @@ const allPokemons = dataPokemon.map(pokemons => createCards(pokemons)).join(" ")
 
 pokeCards.innerHTML = allPokemons;
 
+function flipCards() {
+  const flipContainers = document.querySelectorAll('.flip-container');
+  flipContainers.forEach(container => {
+    container.addEventListener("click", function () {
+      container.classList.toggle("flipped");
+    });
+  });
+}
+
+flipCards();
+
 pokeFilterType.addEventListener("change", function (event) {
   const pokeChange = event.target.value;
   const pokemonFiltered = pokeType(dataPokemon, pokeChange);
   const returnCard = pokemonFiltered.map(pokemons => createCards(pokemons)).join(" ");
   pokeCards.innerHTML = returnCard;
+  flipCards();
 });
 
 pokeFilterOrganize.addEventListener("change", function (event) {
@@ -55,6 +79,13 @@ pokeFilterOrganize.addEventListener("change", function (event) {
   const pokemonAlphaOrder = pokeOrder(dataPokemon, changeOrder);
   const returnCardOrder = pokemonAlphaOrder.map(pokemons => createCards(pokemons)).join(" ");
   pokeCards.innerHTML = returnCardOrder;
+  flipCards();
 });
+
+
+
+
+
+
 
 
