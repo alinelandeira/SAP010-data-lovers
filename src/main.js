@@ -10,11 +10,31 @@ const pokeCards = document.getElementById("cards");
 const pokeFilterType = document.getElementById("elements");
 const pokeFilterOrganize = document.getElementById("order");
 const dataPokemon = data.pokemon; //Criei uma variavel pra colocar os dados de todos os pokemons
+const typeColors = {
+  normal: '#aaa69ddc',
+  fire: '#f98753',
+  water: '#78b8d9',
+  grass: '#9cd281',
+  electric: '#fddb52ec',
+  bug:'#41814b' ,
+  ground: '#ab9842',
+  poison: '#b97fc9',
+  fighting:'#b95537' ,
+  psychic: '#fa85c9',
+  rock: '#a08c37',
+  flying: '#bdb9b8',
+  ghost:'#7b62a3' ,
+  ice: '#9ad3c4f6',
+  dragon: '#f16e57',
+  steel: '#9eb7b8',
+  dark:'#040d1fcf',
+  fairy: '#fdb9e9',
+};
 
 function createCards(pokemons) {
   return ` 
 <div class="flip-container" id= "all-content"> 
-  <div class="flipper">
+  <div class="flipper" style="background-color: ${typeColors[pokemons.type[0]]};">
     <div class="front">
       <div class="cardPoke">
         <div id= "poke-numbers">
@@ -34,7 +54,7 @@ function createCards(pokemons) {
     <div class="back"
      <div class="cardPoke" id="poke-info">
         <div id="poke-types">
-          <p> <strong>Tipo: </strong> ${pokemons.type.join(" ")} </p>  
+          <p> <strong>Tipo: </strong> ${pokemons.type.join(", ")}. </p>  
      
           <p> <strong>Raridade: </strong> ${pokemons["pokemon-rarity"]}</p>
 
@@ -81,8 +101,6 @@ pokeFilterOrganize.addEventListener("change", function (event) {
   pokeCards.innerHTML = returnCardOrder;
   flipCards();
 });
-
-
 
 
 

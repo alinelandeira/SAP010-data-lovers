@@ -24,13 +24,27 @@ export function pokeOrder(pokeArray, changeOrder) {
 }
 
 
+/*export const computeStats = {
 
-export function calculoRaridade (pokeArray, pokeRaridade) {
+  calculatePokemonTypesInPercentages: function (data) {
 
-  const porcentagemRaridade = (pokeArray.filter(pokemon => pokemon[pokemon-rarity(pokeRaridade)])) / pokeArray * 100;
-  return porcentagemRaridade;
+    const totalNumberOfPokemons = data.pokemon.length;
 
-  }
+    const count = {};
+
+    for (const object in data.pokemon) {
+
+      data.pokemon[object].type.forEach(type => {
+        count[type] = (count[type] || 0) + 1;
+      });
+
+    }
+
+    for (const property in count) {
+      count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
+    }//endFor
+    return count;
+*/
 
 
 
