@@ -23,32 +23,9 @@ export function pokeOrder(pokeArray, changeOrder) {
   return ordered;
 }
 
-
-/*export const computeStats = {
-
-  calculatePokemonTypesInPercentages: function (data) {
-
-    const totalNumberOfPokemons = data.pokemon.length;
-
-    const count = {};
-
-    for (const object in data.pokemon) {
-
-      data.pokemon[object].type.forEach(type => {
-        count[type] = (count[type] || 0) + 1;
-      });
-
-    }
-
-    for (const property in count) {
-      count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
-    }//endFor
-    return count;
-*/
-
-
-
-
-
-
+export function percentual(valorParcial, valorTotal) {
+  const porcentagem = (valorParcial / valorTotal) * 100;
+  const porcentagemRound = Math.round(porcentagem);
+  return porcentagemRound;
+}
 

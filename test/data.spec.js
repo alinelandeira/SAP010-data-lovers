@@ -1,4 +1,4 @@
-import { pokeType, pokeOrder } from '../src/data.js';
+import { pokeType, pokeOrder, percentual } from '../src/data.js';
 
 describe('pokeType', () => {
   it('deve ser uma função', () => {
@@ -119,3 +119,60 @@ describe('pokeOrder', () => {
     ]);
   });
 })
+
+describe('percentual', () => {
+  it('deve ser uma função', () => {
+    expect(typeof percentual).toBe('function');
+  });
+
+  it('Deve retornar a porcentagem de pokémons por cada tipo', () => {
+    const poArray = [
+    { 'type': 'normal' },
+    { 'type': 'fire' },
+    { 'type': 'water' },
+    { 'type': 'grass' },
+    { 'type': 'electric' },
+    { 'type': 'bug' },
+    { 'type': 'ground' },
+    { 'type': 'poison' },
+    { 'type': 'fighting' },
+    { 'type': 'psychic' },
+    { 'type': 'rock' },
+    { 'type': 'flying' },
+    { 'type': 'ghost' },
+    { 'type': 'ice' },
+    { 'type': 'dragon' },
+    { 'type': 'steel' },
+    { 'type': 'dark' },
+    { 'type': 'fairy' }
+  ];
+
+  const tipoNormal = tiposPokemon.filter(pokemon => pokemon.type === 'normal');
+  const tipoFire = tiposPokemon.filter(pokemon => pokemon.type === 'fire');
+  const tipoWater = tiposPokemon.filter(pokemon => pokemon.type === 'water');
+  const tipoGrass = tiposPokemon.filter(pokemon => pokemon.type === 'grass');
+  const tipoElectric = tiposPokemon.filter(pokemon => pokemon.type === 'electric');
+  const tipoBug = tiposPokemon.filter(pokemon => pokemon.type === 'bug');
+  const tipoGround = tiposPokemon.filter(pokemon => pokemon.type === 'ground');
+  const tipoPoison = tiposPokemon.filter(pokemon => pokemon.type === 'poison');
+  const tipoFighting = tiposPokemon.filter(pokemon => pokemon.type === 'fighting');
+  const tipoPsychic = tiposPokemon.filter(pokemon => pokemon.type === 'psychic');
+  const tipoRock = tiposPokemon.filter(pokemon => pokemon.type === 'rock');
+  const tipoFlying = tiposPokemon.filter(pokemon => pokemon.type === 'flying');
+  const tipoGhost = tiposPokemon.filter(pokemon => pokemon.type === 'ghost');
+  const tipoIce = tiposPokemon.filter(pokemon => pokemon.type === 'ice');
+  const tipoDragon = tiposPokemon.filter(pokemon => pokemon.type === 'dragon');
+  const tipoSteel = tiposPokemon.filter(pokemon => pokemon.type === 'steel');
+  const tipoDark = tiposPokemon.filter(pokemon => pokemon.type === 'dark');
+  const tipoFairy = tiposPokemon.filter(pokemon => pokemon.type === 'fairy');
+
+    const resultadoFramboesa = percentual(poTipoFramboesa.length, poArray.length);
+    const resultadoAmor = percentual(poTipoAmor.length, poArray.length);
+    const resultadoAmora = percentual(poTipoAmora.length, poArray.length);
+
+    expect(resultadoFramboesa).toEqual(30);
+    expect(resultadoAmor).toEqual(30);
+    expect(resultadoAmora).toEqual(50);
+  });
+});
+

@@ -1,6 +1,7 @@
 import data from './data/pokemon/pokemon.js';
 import { pokeType } from './data.js';
 import { pokeOrder } from './data.js';
+import {percentual} from './data.js';
 
 //for (let i = 0; i < data.pokemon.length; i++){ //Atribuimos o valor 0 ao I, e definimos que se i for menos que o comprimento da pasta de pokemons, seria adicionado mais 1, tornando i=1. Fazendo isso consequentemente até que chegue ao numero certo//
 //console.log (data.pokemon[i].name); // Aqui printamos no console o nome de todos os pokemons. Primeiro acessamos o data, depois o pokemon e o seu indice (i) e depois acessamos seu nome.
@@ -30,6 +31,7 @@ const typeColors = {
   dark:'#040d1fcf',
   fairy: '#fdb9e9',
 };
+const typePorcentagem = document.getElementById("porcentagem");
 
 function createCards(pokemons) {
   return ` 
@@ -89,9 +91,11 @@ flipCards();
 pokeFilterType.addEventListener("change", function (event) {
   const pokeChange = event.target.value;
   const pokemonFiltered = pokeType(dataPokemon, pokeChange);
+  const porcentual = percentual(pokemonFiltered.length, dataPokemon.length);
   const returnCard = pokemonFiltered.map(pokemons => createCards(pokemons)).join(" ");
   pokeCards.innerHTML = returnCard;
   flipCards();
+  typePorcentagem.innerHTML = "Os pokémons do tipo " + pokeChange + " representam " + porcentual + "% dos pokémons ";
 });
 
 pokeFilterOrganize.addEventListener("change", function (event) {
@@ -100,10 +104,5 @@ pokeFilterOrganize.addEventListener("change", function (event) {
   const returnCardOrder = pokemonAlphaOrder.map(pokemons => createCards(pokemons)).join(" ");
   pokeCards.innerHTML = returnCardOrder;
   flipCards();
+  typePorcentagem.innerHTML = " ";
 });
-
-
-
-
-
-

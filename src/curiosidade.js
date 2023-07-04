@@ -1,9 +1,9 @@
 const buttonInformation = document.getElementById("chikorita");
 const newInformation = document.getElementById("boxcuriosities");
 
-
 buttonInformation.addEventListener("click", function () {
   return newInformation.innerHTML = `
+
     <div id="poke-ball" class"ball"> 
       <img src="imagens/pokeball.png" id="pokeBall"/>
       <p> <strong>Pokeball: </strong>Usada para capturar qualquer tipo de Pokémon, porém é aconselhável que o Pokémon esteja em um nível baixo. </p>
@@ -25,5 +25,4 @@ buttonInformation.addEventListener("click", function () {
     </div>
 `;
 });
-
 

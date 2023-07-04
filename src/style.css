@@ -168,7 +168,16 @@ p {
 #turn-icon {
   width: 30px;
   height: 30px;
-  display: flex;
+  display: flex;  
+  text-align: center;
+}
+
+#porcentagem {
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Orbitron' ;
+  font-weight: bold;
+  color: black;
   text-align: center;
 }
 

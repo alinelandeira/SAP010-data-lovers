@@ -22,13 +22,17 @@
     </div>
   </header>
 
-  <main> <!-- usamos ela para colocar nossos select, que serão usados para filtro  -->
+  <main> 
     <div class="filter-pokepidia">
-      <!-- abrimos uma div, onde ficará os selects e suas opções para a filtragem e ordenação  -->
+      <select id="order">
+              <option selected="" value="numberAsc">Crescente</option>
+              <option value="numberDesc">Decrescente</option>
+              <option value="nameAsc">A-Z</option>
+              <option value="nameDesc">Z-A</option>
+      </select>
+
       <select id="elements">
-        <!--  Criamos um select, para conter as opções de tipos de pokemons que serão selecionadas -->
         <option selected="" value="allPoke">Todos</option>
-        <!--  Criamos as opções com todos os tipos, onde a primeira se inicia selecionada -->
         <option value="grass">Planta</option>
         <option value="fire">Fogo</option>
         <option value="water">Água</option>
@@ -48,15 +52,10 @@
         <option value="dark">Sombrio</option>
         <option value="fairy">Fada</option>
       </select>
-
-      <select id="order">
-        <option selected="" value="numberAsc">Crescente</option>
-        <option value="numberDesc">Decrescente</option>
-        <option value="nameAsc">A-Z</option>
-        <option value="nameDesc">Z-A</option>
-      </select>
-
+      
     </div>
+
+    <div id="porcentagem"></div>
 
     <div id="cards"></div>
   </main>
