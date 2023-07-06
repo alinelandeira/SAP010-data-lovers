@@ -22,7 +22,7 @@
 # 1. Prelúdio
 
  O projeto Data Lovers foi elaborado com o propósito de aprimorar nossas habilidades e aplicar os conhecimentos adquiridos durante o bootcamp da Laboratória. Nosso principal objetivo foi explorar e utilizar diversas técnicas, como filtragem, ordenação, cálculo agregado, desenvolvimento de testes e trabalho colaborativo no GitHub. Tudo isso foi realizado a partir de um arquivo de dados fornecido pela Laboratória, proporcionando uma experiência prática e enriquecedora. 
- 
+
 <br>
 
 # 2. Visão geral do projeto
@@ -64,7 +64,7 @@
 
 # 4. Histórias do Usuário
 * **Quem são os usuários principais do produto Pokestop?**
- Os usuários principais do produto Pokestop são jogadores de Pokémon Go e amantes do universo dos pokémons que têm interesse em consultar informações sobre os diversos pokémons existentes na região de Kanto.
+ Os usuários principais do produto Pokestop são jogadores de Pokémon Go e amantes do universo pokémon, que têm interesse em consultar informações sobre os diversos pokémons existentes na região de Kanto.
 
 * **Quais são os objetivos dos usuários com relação ao produto Pokestop?** 
 O objetivo dos usuários com relação ao produto Pokestop é obter informações detalhadas sobre os pokémons, além de descobrir curiosidades a respeito desse universo, como as diferentes pokébolas de captura.
