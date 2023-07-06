@@ -86,6 +86,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: end;
 }
 
 a {
@@ -146,5 +147,6 @@ a {
         flex-direction: initial;
         font-size: 10px;
         position: relative;
+        align-content:end;
     }
 }

@@ -9,7 +9,7 @@
 * [5. Critérios de aceitação e hacker edition alcançados](#5-critérios-de-aceitação-e-hacker-edition-alcançados)
 * [6. Ferramentas e mecanismos usados](#6-ferramentas-e-mecanismos-usados)
 * [7. Checklist](#7-checklist)
-* [8. Acesse a PokeStop aqui](#8-acesse-a-pokestop-aqui)
+* [8. PokeStop aqui](#8-pokestop-aqui)
 * [9. Projeto desenvolvido por](#9-projeto-desenvolvido-por)
 
 
@@ -22,6 +22,7 @@
 # 1. Prelúdio
 
  O projeto Data Lovers foi elaborado com o propósito de aprimorar nossas habilidades e aplicar os conhecimentos adquiridos durante o bootcamp da Laboratória. Nosso principal objetivo foi explorar e utilizar diversas técnicas, como filtragem, ordenação, cálculo agregado, desenvolvimento de testes e trabalho colaborativo no GitHub. Tudo isso foi realizado a partir de um arquivo de dados fornecido pela Laboratória, proporcionando uma experiência prática e enriquecedora. 
+ 
 <br>
 
 # 2. Visão geral do projeto
@@ -37,6 +38,7 @@
  Embora sejamos iniciantes na programação, estamos animados para compartilhar os resultados de nossos esforços. Buscamos criar uma experiência envolvente, despertando a curiosidade e a paixão pelos Pokémons. Queremos que todos possam se divertir ao explorar as características de cada criatura, conectar pessoas apaixonadas por esse mundo e oferecer uma interface interativa que proporciona uma imersão única. 
 
  Estamos empolgadas para tê-lo(a) ao nosso lado nessa incrível jornada como programadoras em desenvolvimento!  
+
 <br>
 
 # 3. Objetivos
@@ -46,6 +48,7 @@
 ## Objetivo Principal:
 
 * Desenhar e construir uma interface web que permita visualizar e manipular dados, levando em consideração as necessidades do usuário. 
+
 <br>
 
 ## Objetivos Opcionais:
@@ -56,12 +59,39 @@
 *  Trabalhar com funções, parâmetros de funções e manipulação dinâmica do DOM.
 *  Utilizar Git colaborativo para o controle de versões e trabalho em equipe.
 *  Construir testes unitários para garantir a qualidade do código.
+
 <br>
 
-# 4. Protótipos
+# 4. Histórias do Usuário
+* **Quem são os usuários principais do produto Pokestop?**
+ Os usuários principais do produto Pokestop são jogadores de Pokémon Go e amantes do universo dos pokémons que têm interesse em consultar informações sobre os diversos pokémons existentes na região de Kanto.
+
+* **Quais são os objetivos dos usuários com relação ao produto Pokestop?** 
+O objetivo dos usuários com relação ao produto Pokestop é obter informações detalhadas sobre os pokémons, além de descobrir curiosidades a respeito desse universo, como as diferentes pokébolas de captura.
+
+* **Quais são os dados mais relevantes que os usuários desejam ver na interface do Pokestop e por quê?**
+A interface do Pokestop exibe os dados mais relevantes que os usuários desejam visualizar. Esses dados incluem o nome, a imagem, o número, o tipo, a raridade, as resistências, as fraquezas e os ataques especiais de cada Pokémon. É importante ressaltar o destaque dado às resistências, fraquezas e raridade, pois essas informações informam a probabilidade de um usuário encontrar e capturar um Pokémon específico, além de orientar sobre quais Pokémons utilizar em batalhas, levando em consideração suas fraquezas e resistências.
+
+* **Quando os usuários utilizam ou utilizariam o produto Pokestop?**
+Os usuários utilizam o produto Pokestop quando estão na região de Kanto e precisam consultar informações sobre um pokémon desconhecido ou revisitar os dados de acordo com sua necessidade.
+
+<br>
+
+# 5. Protótipos
 
 ## — Protótipo de baixa fidelidade:
 ![baixa fidelidade](src/imagens/baixafidelidade.png)
+
+## — Testes de usabilidade:
+Após a criação e início da construção do projeto, constatamos a existência de alguns problemas que não estavam alinhados com a história de usuário que pretendíamos proporcionar. Diante disso, tomamos a decisão de analisar cuidadosamente nossos erros e identificar os problemas de usabilidade, a fim de trabalhar em suas melhorias.
+
+Identificamos os seguintes problemas:
+
+* Insuficiência de informações fornecidas aos nossos usuários.
+* Falta de responsividade do site em diferentes dispositivos.
+* Aspecto pouco atrativo e interativo do projeto.
+
+Com base nessas percepções, nos empenhamos em solucionar cada um desses desafios, visando proporcionar uma experiência mais satisfatória aos usuários.
 
 ## —  Protótipo de alta fidelidade:
 ![baixa fidelidade](src/imagens/pokestop1.png)
@@ -71,7 +101,9 @@
 
 ## — Testes unitários:
 ![testes](src/imagens/testes100.png)
+
 <br>
+
 
 # 5. Critérios de aceitação e hacker edition alcançados
  Critérios mínimos de aceitação do projeto:
@@ -136,11 +168,12 @@
 * [✔] UI: Permite ordenar dados por um ou mais campos (asc e desc).
 * [✔] UI: Permite filtrar dados com base em uma condição.
 * [✔] UI: É _responsivo_.
+
 <br>
 
-# 8. Acesse a PokeStop aqui:
+# 8. PokeStop aqui:
 
-### Acesse o [PokeStop](https://catarinaeudoxia.github.io/SAP010-data-lovers/) aqui! 
+### Aproveite a parada e de uma olhada na nossa [PokeStop](https://catarinaeudoxia.github.io/SAP010-data-lovers/)! 
 <img src="src/imagens/mrmime.gif" alt="pokemon" width="200" height="200" >
 
 <br>
