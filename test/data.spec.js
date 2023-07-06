@@ -1,56 +1,155 @@
-import { pokeType,pokeOrder } from '../src/data.js';
-
-const pArray = [{type: 'fire'}, {type: 'water'}, {type: 'ear'}];
-const todos = 'allPoke';
-const pChage = 'fire';
+import { pokeType, pokeOrder, percentual } from '../src/data.js';
 
 describe('pokeType', () => {
-  it('is a function', () => {
+  it('deve ser uma função', () => {
     expect(typeof pokeType).toBe('function');
   });
 
-  it('returns `tipo todos`', () => {
-    expect(pokeType(pArray, todos)).toEqual(pArray);
+  it('deve retornar o tipo "todos"', () => {
+    const pokeArray = [{ type: 'fire' }, { type: 'water' }, { type: 'grass' }];
+    const todos = 'allPoke';
+    expect(pokeType(pokeArray, todos)).toEqual(pokeArray);
   });
 
-  it('returns `tipo filtrado`', () => {
-    expect(pokeType(pArray, pChage)).toEqual([{type: 'fire'}]);
+  it('deve retornar o tipo filtrado', () => {
+    const pokeArray = [{ type: 'fire' }, { type: 'water' }, { type: 'grass' }];
+    const pokeChange = 'fire';
+    expect(pokeType(pokeArray, pokeChange)).toEqual([{ type: 'fire' }]);
   });
 });
-
-const poArray = [{'num': '001','name': 'bulbasaur'}, {'num': '005','name': 'alossauro'}, {'num': '002','name': 'alossauro'}, {'num': '002', 'name': 'Venusaur'}, {'num': '003','name': 'duldosaur'}, {'num': '004','name': 'pokehcty'}];
-const poChange = "nameAsc";
-const poNChange = "nameDesc";
-const poNuChange = "numberAsc";
-const poNuDChange = "numberDesc";
 
 describe('pokeOrder', () => {
-  it('is a function', () => {
+  it('deve ser uma função', () => {
     expect(typeof pokeOrder).toBe('function');
   });
-  it('returs `nomes ordem crescente`', () => {
-    expect(pokeOrder(poArray, poChange)).toEqual([{'num': '002','name': 'alossauro'}, {'num': '001','name': 'bulbasaur'}, {'num': '003','name': 'duldosaur'}, {'num': '004','name': 'pokehcty'}]);
+
+  it('deve retornar nomes em ordem crescente', () => {
+    const pokeArray = [
+      { 'num': '063', 'name': 'Abra' },
+      { 'num': '142', 'name': 'Aerodactyl' },
+      { 'num': '190', 'name': 'Aipom' },
+      { 'num': '065', 'name': 'Alakazam' },
+      { 'num': '181', 'name': 'Ampharos' },
+      { 'num': '024', 'name': 'Arbok' },
+      { 'num': '059', 'name': 'Arcanine' },
+      { 'num': '168', 'name': 'Ariados' }
+    ];
+    const pokeChange = "nameAsc";
+    expect(pokeOrder(pokeArray, pokeChange)).toEqual([
+      { 'num': '063', 'name': 'Abra' },
+      { 'num': '142', 'name': 'Aerodactyl' },
+      { 'num': '190', 'name': 'Aipom' },
+      { 'num': '065', 'name': 'Alakazam' },
+      { 'num': '181', 'name': 'Ampharos' },
+      { 'num': '024', 'name': 'Arbok' },
+      { 'num': '059', 'name': 'Arcanine' },
+      { 'num': '168', 'name': 'Ariados' }
+    ]);
   });
-  it('returs `nomes ordem decrescente`', () => {
-    expect(pokeOrder(poArray, poNChange)).toEqual([{'num': '004','name': 'pokehcty'}, {'num': '003','name': 'duldosaur'}, {'num': '001','name': 'bulbasaur'}, {'num': '002','name': 'alossauro'}]);
+
+  it('deve retornar nomes em ordem decrescente', () => {
+    const pokeArray = [
+      { 'num': '063', 'name': 'Abra' },
+      { 'num': '142', 'name': 'Aerodactyl' },
+      { 'num': '190', 'name': 'Aipom' },
+      { 'num': '065', 'name': 'Alakazam' },
+      { 'num': '181', 'name': 'Ampharos' },
+      { 'num': '024', 'name': 'Arbok' },
+      { 'num': '059', 'name': 'Arcanine' },
+      { 'num': '168', 'name': 'Ariados' }
+    ];
+    const pokeNumberChange = "nameDesc";
+    expect(pokeOrder(pokeArray, pokeNumberChange)).toEqual([
+      { 'num': '168', 'name': 'Ariados' },
+      { 'num': '059', 'name': 'Arcanine' },
+      { 'num': '024', 'name': 'Arbok' },
+      { 'num': '181', 'name': 'Ampharos' },
+      { 'num': '065', 'name': 'Alakazam' },
+      { 'num': '190', 'name': 'Aipom' },
+      { 'num': '142', 'name': 'Aerodactyl' },
+      { 'num': '063', 'name': 'Abra' }
+    ]);
   });
-  it('returs `números ordem crescente`', () => {
-    expect(pokeOrder(poArray, poNuChange)).toEqual([{'num': '001','name': 'bulbasaur'}, {'num': '002','name': 'alossauro'}, {'num': '003','name': 'duldosaur'}, {'num': '004','name': 'pokehcty'}]);
+
+  it('deve retornar números em ordem crescente', () => {
+    const pokeArray = [
+      { 'num': '063', 'name': 'Abra' },
+      { 'num': '142', 'name': 'Aerodactyl' },
+      { 'num': '190', 'name': 'Aipom' },
+      { 'num': '065', 'name': 'Alakazam' },
+      { 'num': '181', 'name': 'Ampharos' },
+      { 'num': '024', 'name': 'Arbok' },
+      { 'num': '059', 'name': 'Arcanine' },
+      { 'num': '168', 'name': 'Ariados' }
+    ];
+    const pokeNumberChange = "numberAsc";
+    expect(pokeOrder(pokeArray, pokeNumberChange)).toEqual([
+      { 'num': '024', 'name': 'Arbok' },
+      { 'num': '059', 'name': 'Arcanine' },
+      { 'num': '063', 'name': 'Abra' },
+      { 'num': '065', 'name': 'Alakazam' },
+      { 'num': '142', 'name': 'Aerodactyl' },
+      { 'num': '168', 'name': 'Ariados' },
+      { 'num': '181', 'name': 'Ampharos' },
+      { 'num': '190', 'name': 'Aipom' }
+    ]);
   });
-  it('returs `números ordem decrescente`', () => {
-    expect(pokeOrder(poArray, poNuDChange)).toEqual([{'num': '004','name': 'pokehcty'}, {'num': '003','name': 'duldosaur'} , {'num': '002','name': 'alossauro'}, {'num': '001','name': 'bulbasaur'}]);
+
+  it('deve retornar números em ordem decrescente', () => {
+    const pokeArray = [
+      { 'num': '063', 'name': 'Abra' },
+      { 'num': '142', 'name': 'Aerodactyl' },
+      { 'num': '190', 'name': 'Aipom' },
+      { 'num': '065', 'name': 'Alakazam' },
+      { 'num': '181', 'name': 'Ampharos' },
+      { 'num': '024', 'name': 'Arbok' },
+      { 'num': '059', 'name': 'Arcanine' },
+      { 'num': '168', 'name': 'Ariados' }
+    ];
+    const pokeNumberChange = "numberDesc";
+    expect(pokeOrder(pokeArray, pokeNumberChange)).toEqual([
+      { 'num': '190', 'name': 'Aipom' },
+      { 'num': '181', 'name': 'Ampharos' },
+      { 'num': '168', 'name': 'Ariados' },
+      { 'num': '142', 'name': 'Aerodactyl' },
+      { 'num': '065', 'name': 'Alakazam' },
+      { 'num': '063', 'name': 'Abra' },
+      { 'num': '059', 'name': 'Arcanine' },
+      { 'num': '024', 'name': 'Arbok' }
+    ]);
+  });
+})
+
+describe('percentual', () => {
+  it('deve ser uma função', () => {
+    expect(typeof percentual).toBe('function');
+  });
+
+  it('deve retornar a porcentagem de pokémons por cada tipo em relação ao total', () => {
+    const allTypes = [
+      { 'num': '000', 'name': 'Miltank', 'type': 'normal' },
+      { 'num': '142', 'name': 'Jolteon', 'type': 'electric' },
+      { 'num': '190', 'name': 'Aipom', 'type': 'normal' },
+      { 'num': '065', 'name': 'Alakazam', 'type': 'psychic' },
+      { 'num': '181', 'name': 'Ampharos', 'type': 'electric' },
+      { 'num': '024', 'name': 'Ditto', 'type': 'normal' },
+      { 'num': '059', 'name': 'Jigglypuff', 'type': 'normal' },
+      { 'num': '168', 'name': 'Raikou', 'type': 'electric' },
+      { 'num': '045', 'name': 'Abra', 'type': 'psychic' },
+      { 'num': '164', 'name': 'Lugia', 'type': 'psychic' }
+    ];
+
+    const typeNormal = allTypes.filter(pokemon => pokemon.type === 'normal');
+    const typeElectric = allTypes.filter(pokemon => pokemon.type === 'electric');
+    const typePsychic = allTypes.filter(pokemon => pokemon.type === 'psychic');
+
+    const normalResult = percentual(typeNormal.length, allTypes.length);
+    const electricResult = percentual(typeElectric.length, allTypes.length);
+    const psychicResult = percentual(typePsychic.length, allTypes.length);
+
+    expect(normalResult).toEqual(40);
+    expect(electricResult).toEqual(30);
+    expect(psychicResult).toEqual(30);
   });
 });
-  
-
-
-/*describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-}); */
 
