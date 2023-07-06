@@ -1,4 +1,4 @@
-# [Data Lovers — PokeStop](https://catarinaeudoxia.github.io/SAP010-data-lovers/)
+# <h1 align="center"> [Data Lovers — PokeStop](https://catarinaeudoxia.github.io/SAP010-data-lovers/) </h1>
 
 ## Índice
 
@@ -45,13 +45,13 @@
   O projeto possui um objetivo principal e objetivos opcionais que podem ser escolhidos para guiar nossa estratégia de trabalho. Confira abaixo:
 <br>
 
-## Objetivo Principal:
+### Objetivo Principal:
 
 * Desenhar e construir uma interface web que permita visualizar e manipular dados, levando em consideração as necessidades do usuário. 
 
 <br>
 
-## Objetivos Opcionais:
+### Objetivos Opcionais:
 
 *  Desenvolver uma interface web que permita visualizar e manipular os dados da base de dados.
 *  Utilizar habilidades em HTML, CSS e JavaScript para criar uma interface atraente e funcional.
@@ -79,10 +79,10 @@ Os usuários utilizam o produto Pokestop quando estão na região de Kanto e pre
 
 # 5. Protótipos
 
-## — Protótipo de baixa fidelidade:
+### — Protótipo de baixa fidelidade:
 ![baixa fidelidade](src/imagens/baixafidelidade.png)
 
-## — Testes de usabilidade:
+### — Testes de usabilidade:
 Após a criação e início da construção do projeto, constatamos a existência de alguns problemas que não estavam alinhados com a história de usuário que pretendíamos proporcionar. Diante disso, tomamos a decisão de analisar cuidadosamente nossos erros e identificar os problemas de usabilidade, a fim de trabalhar em suas melhorias.
 
 Identificamos os seguintes problemas:
@@ -93,13 +93,13 @@ Identificamos os seguintes problemas:
 
 Com base nessas percepções, nos empenhamos em solucionar cada um desses desafios, visando proporcionar uma experiência mais satisfatória aos usuários.
 
-## —  Protótipo de alta fidelidade:
+### —  Protótipo de alta fidelidade:
 ![baixa fidelidade](src/imagens/pokestop1.png)
 ![baixa fidelidade](src/imagens/interface.png)
 ![baixa fidelidade](src/imagens/curiosidades2.png)
 ![baixa fidelidade](src/imagens/curiosidades1.png)
 
-## — Testes unitários:
+### — Testes unitários:
 ![testes](src/imagens/testes100.png)
 
 <br>
