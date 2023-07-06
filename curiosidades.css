@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100%;
+    background-image: url(imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Orbitron';
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+header {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* alinhamento horizontal do elemento no html  */
+}
+
+  #menu-poke {
+    background-color: #ffffffe9;
+    border-radius: 8px;
+    width: 90%;
+    height: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Orbitron';
+    text-align: left;
+    padding: 1em;
+    align-items: center;
+    
+
+}
+ 
+  a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: bold
+  }
+
+main {
+    background-color: #ffffffe9;
+    border-radius: 8px;
+    width: 90%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    padding: 1em;
+    justify-content: center;
+    display: flex;
+}
+
+h3 {
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+
+.chikorita-button {
+    text-align: center;
+    height: 20%;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.chikorita-img {
+    height: 150px;
+    width: 90px;
+}
+
+.ball {
+    text-align: left ;
+}
+#poke-ball,
+#great-ball,
+#ultra-ball,
+#master-ball {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+#pokeBall,
+#greatBall,
+#ultraBall,
+#masterBall {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: left;
+    padding: 10px;
+    box-shadow: -3px 2px 5px black;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 480px) {
+
+    * {
+        width: auto;
+    }
+
+    #poke-curiosities {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    html,
+    body {
+        width: auto;
+    }
+
+    main {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #poke-ball,#great-ball, #ultra-ball, #master-ball {
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    #pokeBall, #greatBall, #ultraBall, #masterBall {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    box-shadow: -3px 2px 5px black;
+    border-radius: 50%;
+    }
+
+    #menu-poke {
+        text-align: center;
+      }
+}

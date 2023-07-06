@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    background-image: url(imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Orbitron';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    justify-content: center; 
+    display: flex;  
+}
+
+#first-page {
+    background-color: #ffffffe9;
+    border-radius: 20px;
+    padding: 2em;
+    font-size: larger;
+    flex-direction: column;
+    width: 90%;
+}
+
+h3 {
+    margin: 30px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#start-button {
+    display: flex;
+   justify-content: center;
+}
+
+.btn-ball {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /* Overflow serve para controlar ás "bordas" que ficam fora do limite de um conteúdo
+    Ex: Usamos uma imagem quadrada para um botão redondo, então as pontas do quadrado foram escondidas com o hidden*/
+    margin-top: 30px;
+    align-items: center;
+}
+
+.icone {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/botão.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+
+}
+
+footer {
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    background-color: #ffffffc7;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: end;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    align-items: center;
+}
+
+
+@media (max-width: 480px) {
+
+    * {
+        margin: 0;
+    }
+
+    main,
+    header {
+        align-items: center;
+        text-align: justify;
+        display: flex;
+        width: auto;    
+    }
+
+    html,
+    body {
+        width: 100%;
+    }
+
+    #poke-stop {
+        width: 100%;
+    }
+
+    #first-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 3em;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    a {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: initial;
+        font-size: 10px;
+        position: relative;
+        align-content:end;
+    }
+}
