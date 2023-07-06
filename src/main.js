@@ -12,24 +12,24 @@ const pokeFilterType = document.getElementById("elements");
 const pokeFilterOrganize = document.getElementById("order");
 const dataPokemon = data.pokemon; //Criei uma variavel pra colocar os dados de todos os pokemons
 const typeColors = {
-  normal: '#aaa69ddc',
-  fire: '#f98753',
-  water: '#78b8d9',
-  grass: '#9cd281',
-  electric: '#fddb52ec',
-  bug:'#41814b' ,
-  ground: '#ab9842',
-  poison: '#b97fc9',
-  fighting:'#b95537' ,
-  psychic: '#fa85c9',
-  rock: '#a08c37',
-  flying: '#bdb9b8',
-  ghost:'#7b62a3' ,
-  ice: '#9ad3c4f6',
-  dragon: '#f16e57',
-  steel: '#9eb7b8',
-  dark:'#040d1fcf',
-  fairy: '#fdb9e9',
+  normal: '#cbcbcbc', //ok
+  fire: '#ffa867db', //ok
+  water: '#addeff',//ok
+  grass: '#cdf0ab', //ok
+  electric: '#f3e488',//ok
+  bug:'#92c57c', //ok
+  ground: '#b8ab70', //ok
+  poison: '#d5aaff', //ok
+  fighting:'#bd674d', //ok
+  psychic: '#e5a4d7', //ok
+  rock: '#7f695d', //ok
+  flying: '#bdb9b8', //ok
+  ghost:'#b992e0' , //ok
+  ice: '#bff3fa',//ok
+  dragon: '#e7886c', //ok
+  steel: '#dadada', //ok
+  dark:'#494c51',
+  fairy: '#e7b3d7', //ok
 };
 const typePorcentagem = document.getElementById("porcentagem");
 
@@ -60,9 +60,9 @@ function createCards(pokemons) {
      
           <p> <strong>Raridade: </strong> ${pokemons["pokemon-rarity"]}</p>
 
-          <p><strong>Altura: </strong> ${pokemons.size.height}</p>
+          <p><strong>Resistências: </strong> ${pokemons.resistant.join(', ')}</p>
 
-         <p><strong>Peso: </strong>${pokemons.size.weight}</p>
+         <p><strong>Fraquezas: </strong>${pokemons.weaknesses.join(', ')} </p>
 
           <p><strong>Ataque especial: </strong>${pokemons["special-attack"].map(attack => attack.name).join(',  ')}.</p>
         </div>

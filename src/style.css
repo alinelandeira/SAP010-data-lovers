@@ -23,7 +23,7 @@ header {
 }
 
 #menu-poke {
-  background-color: #ffffff;
+  background-color: #ffffffe9;
   border-radius: 8px;
   /* bordinha arredondada  */
   width: 90%;
@@ -42,7 +42,7 @@ header {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #ffffffe9;
   /* cor de fundo  */
   border-radius: 8px;
   /* bordinha arredondada  */
@@ -131,14 +131,14 @@ p {
 .flipper {
   position: relative;
   width: 270px;
-  height: 320px;
+  height: 350px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
   border-radius: 1em;
   background-color: rgb(188, 190, 190);
   font-family: 'Orbitron';
   justify-content: center;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.9);
 }
 
 .front,

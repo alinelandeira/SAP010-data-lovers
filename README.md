@@ -1,16 +1,22 @@
-# Data Lovers
+# [Data Lovers — PokeStop](https://catarinaeudoxia.github.io/SAP010-data-lovers/)
 
 ## Índice
 
 * ### [ 1. Prelúdio](#1-prelúdio)
 * ### [2. Visão geral do projeto](#2-visão-geral-do-projeto)
 * ### [3. Objetivos ](#3-objetivos)
-* ### [4. Considerações gerais](#4-considerações-gerais)
-* ### [6. Hacker edition](#6-hacker-edition)
-* ### [7. Considerações técnicas](#7-considerações-técnicas)
-* ### [9. Checklist](#9-checklist)
+* ### [4. Protótipos](#4-protótipos)
+* ### [5. Critérios de aceitação e hacker edition alcançados](#5-critérios-de-aceitação-e-hacker-edition-alcançados)
+* ### [6. Ferramentas e mecanismos usados](#6-ferramentas-e-mecanismos-usados)
+* ### [7. Checklist](#7-checklist)
+* ### [8. Acesse a PokeStop aqui](#8-acesse-a-pokestop-aqui)
+* ### [9. Projeto desenvolvido por](#9-projeto-desenvolvido-por)
 
-***
+
+<br>
+
+![pokepidia](src/imagens//pokepidia1.png)
+
 <br>
 
 # 1. Prelúdio
@@ -24,9 +30,9 @@
 
 ### Com determinação e dedicação, aprendemos a trabalhar com o acesso aos objetos, utilizando funções, parâmetros, map, filter, sort e cálculo agregado. Além disso, mergulhamos no mundo do Git colaborativo, onde pudemos trabalhar em equipe e aprender com cada passo dado.
 
-### No meio de tantos temas interessantes, escolhemos explorar o universo Pokémon, que nos presenteou com uma base de dados contendo 251 criaturas da região de Kanto. Nosso foco era trazer essas informações para os jogadores e aspirantes a treinadores, permitindo que eles mergulhassem no mundo dos Pokémon.
+### No meio de tantos temas interessantes, escolhemos explorar o universo Pokémon, que nos presenteou com uma base de dados contendo 251 criaturas da região de Kanto. Nosso foco era trazer essas informações para os jogadores e aspirantes a treinadores, permitindo que eles mergulhassem no mundo dos Pokémons.
 
-### Nosso objetivo era desenvolver uma interface intuitiva e cativante, onde as pessoas pudessem desfrutar das informações detalhadas sobre cada Pokémon. Através dela, seria possível explorar características como números, nomes, tipos, tamanhos, pesos e ataques especiais. Além disso, implementamos a capacidade de aplicar filtros por tipo e realizar ordenações numéricas ou alfabéticas, para oferecer uma experiência personalizada.
+### Nosso objetivo era desenvolver uma interface intuitiva e cativante, onde as pessoas pudessem desfrutar das informações detalhadas sobre cada Pokémon. Através dela, seria possível explorar características como números, nomes, tipos, resistências, fraquezas e ataques especiais. Além disso, implementamos a capacidade de aplicar filtros por tipo e realizar ordenações numéricas ou alfabéticas, para oferecer uma experiência personalizada.
 
 ### Embora sejamos iniciantes na programação, estamos animados para compartilhar os resultados de nossos esforços. Buscamos criar uma experiência envolvente, despertando a curiosidade e a paixão pelos Pokémons. Queremos que todos possam se divertir ao explorar as características de cada criatura, conectar pessoas apaixonadas por esse mundo e oferecer uma interface interativa que proporciona uma imersão única. 
 
@@ -54,12 +60,20 @@
 
 # 4. Protótipos
 
-## Protótipo de baixa fidelidade:
+## — Protótipo de baixa fidelidade:
+![baixa fidelidade](src/imagens/baixafidelidade.png)
 
-## Protótipo de alta fidelidade:
+## —  Protótipo de alta fidelidade:
+![baixa fidelidade](src/imagens/pokestop1.png)
+![baixa fidelidade](src/imagens/interface.png)
+![baixa fidelidade](src/imagens/curiosidades2.png)
+![baixa fidelidade](src/imagens/curiosidades1.png)
+
+## — Testes unitários:
+![testes](src/imagens/testes100.png)
 <br>
 
-# 5. Critérios aceitação e hacker edition alcançados
+# 5. Critérios de aceitação e hacker edition alcançados
 ### Critérios mínimos de aceitação do projeto:
 
 * [✔] Definição de produto.
@@ -86,42 +100,79 @@
 
 # 6. Ferramentas e mecanismos usados:
 
-— HTML
+###  — HTML
 
-— CSS 
+### — CSS 
 
-— JavaScript 
+### — JavaScript 
 
-— VSCODE 
+### — VSCODE 
 
-— Figma 
+### — Figma 
 
-—  Canva
+### —  Canva
 
-— Git bash 
+### — Git bash 
 
-— Node.js
+### — Node.js
 
-— Notion
+### — Jest
 
+### — Notion
 
-## 2. Resumo do projeto
-* [Pokémon](src/data/pokemon/pokemon.json): Neste conjunto você encontrará uma
-  lista com os 251 Pokémon da região de Kanto, com suas respectivas estatísticas
-  utilizadas no jogo [Pokémon GO](http://pokemongolive.com).
-  - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt-BR.md)
+<br>
 
-## 9. Checklist
+# 7. Checklist
 
-* [✔] Usar VanillaJS.
-* [✔]Passa pelo linter (`npm run pretest`)
-* [✔] Passa pelos testes (`npm test`)
-* [✔] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e branches.
-* [✔] Inclui uma _definição de produto_ clara e informativa no `README.md`.
-* [✔] Inclui histórias de usuário no `README.md`.
-* [✔] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
-* [✔] Inclui uma lista de problemas detectados nos testes de usabilidade no `README.md`.
-* [✔] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
-* [✔] UI: Permite ordenar dados por um ou mais campos (asc e desc).
-* [✔] UI: Permite filtrar dados com base em uma condição.
-* [✔] UI: É _responsivo_.
+* ### [✔] Usar VanillaJS.
+* ### [✔]Passa pelo linter (`npm run pretest`)
+* ### [✔] Passa pelos testes (`npm test`)
+* ### [✔] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e branches.
+* ### [✔] Inclui uma _definição de produto_ clara e informativa no `README.md`.
+* ### [✔] Inclui histórias de usuário no `README.md`.
+* ### [✔] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
+* ### [✔] Inclui uma lista de problemas detectados nos testes de usabilidade no `README.md`.
+* ### [✔] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
+* ### [✔] UI: Permite ordenar dados por um ou mais campos (asc e desc).
+* ### [✔] UI: Permite filtrar dados com base em uma condição.
+* ### [✔] UI: É _responsivo_.
+<br>
+
+# 8. Acesse a PokeStop aqui:
+
+### Acesse o [PokeStop](https://catarinaeudoxia.github.io/SAP010-data-lovers/) aqui! 
+<img src="src/imagens/mrmime.gif" alt="pokemon" width="200" height="200" >
+
+<br>
+
+# 9. Projeto desenvolvido por:
+<br>
+
+  <table>
+    <tr>
+      <td align="center">
+        <a href="#">
+          <img src="https://avatars.githubusercontent.com/u/107163817?v=4" width="100px;" alt="Foto da Aline no GitHub"/><br>
+          <sub>
+            <b>Aline Landeira</b>
+          </sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="#">
+          <img src="https://avatars.githubusercontent.com/u/129068843?s=400&u=07f6693114af32c3fc33f1913fde52c78b9dfd85&v=4" width="100px;" alt="Foto da Catarina no GitHub"/><br> 
+          <sub>
+            <b>Catarina Eudoxia Ferreira</b>
+          </sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="#">
+          <img src="https://avatars.githubusercontent.com/u/104176318?v=4" width="100px;" alt="Foto da Carolina no GitHub"/><br>
+          <sub>
+            <b>Carolina Menezes</b>
+          </sub>
+        </a>
+      </td>
+    </tr>
+  </table>
