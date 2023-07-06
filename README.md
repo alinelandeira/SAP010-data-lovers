@@ -1,4 +1,4 @@
-# <h1 align="center"> [Data Lovers — PokeStop](https://catarinaeudoxia.github.io/SAP010-data-lovers/) </h1>
+# <h1 align="center"> [Data Lovers — PokeStop](https://alinelandeira.github.io/SAP010-data-lovers/) </h1>
 
 ## Índice
 
@@ -173,7 +173,7 @@ Com base nessas percepções, nos empenhamos em solucionar cada um desses desafi
 
 # 8. PokeStop aqui:
 
-### Aproveite a parada e de uma olhada na nossa [PokeStop](https://catarinaeudoxia.github.io/SAP010-data-lovers/)! 
+### Aproveite a parada e de uma olhada na nossa [PokeStop](https://alinelandeira.github.io/SAP010-data-lovers/)! 
 <img src="src/imagens/mrmime.gif" alt="pokemon" width="200" height="200" >
 
 <br>
